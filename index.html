@@ -11,5 +11,11 @@
 <script>
     document.getElementById('date').textContent = new Date().toLocaleDateString();
 </script>
+<footer>
+    <p>Page updated at: <span id="update-time">calculating...</span></p>
+</footer>
+<script>
+    document.getElementById('update-time').textContent = new Date().toLocaleTimeString();
+</script>
 </body>
 </html>
