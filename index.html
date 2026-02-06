@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UFT-8">
+    <meta charset="UTF-8">
     <title>My first page</title>
 </head>
 <body>
 <h1>Welcome</h1>
-<p>This is my firts HTML document on GitHub</p>
-<p>Today is: <span id="date">loadind date...</spawn></p>
+<p>This is my first HTML document on GitHub</p>
+<p>Today is: <span id="date">loading date...</span></p>
 <script>
     document.getElementById('date').textContent = new Date().toLocaleDateString();
 </script>
+<section>
+    <h2>My learning form</h2>
+    <form>
+        <fieldset>
+            <legend>What have you learned today?</legend>
+            <label><input type="checkbox" name="learned" value="html">HTML Forms</label>
+            <label><input type="checkbox" name="learned" value="css">CSS Basics</label>
+            <label><input type="checkbox" name="learned" value="git">Git Commands</label>
+        </fieldset>
+        <fieldset>
+            <legend>How many hours did you study?</legend>
+            <label><input type="radio" name="hours" value="1-2">1-2 hours</label>
+            <label><input type="radio" name="hours" value="3-4">3-4 hours</label>
+            <label><input type="radio" name="hours" value="5 or more">5 or more</label>
+        </fieldset>
+        
+        <input type="email" placeholder="Your email for updates" required>
+        <button type="submit">Save Progress</button>
+    </form>
+</section>
 <footer>
     <p>Page updated at: <span id="update-time">calculating...</span></p>
 </footer>
