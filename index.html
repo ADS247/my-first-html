@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <title>My first page</title>
      <style>
+         .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+}
+
+        .card {
+            background: white;
+            color: #333;
+            padding: 20px 25px;
+            border-radius: 15px;
+            width: 180px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+}
+
+        .card:hover {
+            transform: translateY(-5px);
+}
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #667eea;
+}
+
+        .card p {
+            margin: 0;
+            color: #666;
+}
         body {
             font-family: sans-serif;
             max-width: 800px;
@@ -122,12 +157,30 @@
     </style>
 </head>
 <body>
-<h1>Welcome</h1>
+<h1>My Coding Journey</h1>
 <p>This is my first HTML document on GitHub</p>
 <p>Today is: <span id="date">loading date...</span></p>
 <script>
     document.getElementById('date').textContent = new Date().toLocaleDateString();
 </script>
+<div class="gallery">
+    <div class="card">
+        <h3> HTML</h3>
+        <p>Cat Photo App</p>
+    </div>
+    <div class="card">
+        <h3> CSS</h3>
+        <p>Cafe Menu</p>
+    </div>
+    <div class="card">
+        <h3> Colors</h3>
+        <p>Colored Markers</p>
+    </div>
+    <div class="card">
+        <h3> Flexbox</h3>
+        <p>Photo Gallery</p>
+    </div>
+</div>
 <section>
     <h2>My learning form</h2>
     <form>
