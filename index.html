@@ -39,6 +39,29 @@
             margin: 0;
             color: #666;
 }
+        .nutrition-tip {
+            background: #fff3cd;
+            border-left: 6px solid #ffc107;
+            padding: 15px 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            letter-spacing: 0.3px;
+}
+
+        .nutrition-tip h3 {
+            margin-top: 0;
+            color: #856404;
+            font-weight: bold;
+}
+
+        .nutrition-tip .example {
+            font-style: italic;
+            color: #6c757d;
+            border-top: 1px dashed #ccc;
+            padding-top: 10px;
+}
         body {
             font-family: sans-serif;
             max-width: 800px;
@@ -182,6 +205,11 @@
     </div>
 </div>
 <section>
+    <div class="nutrition-tip">
+    <h3> Typography Tip</h3>
+    <p>Good typography makes text easier to read and more professional.</p>
+    <p class="example">Example: line-height: 1.5</p>
+    </div>
     <h2>My learning form</h2>
     <form>
         <fieldset>
@@ -196,7 +224,6 @@
             <label><input type="radio" name="hours" value="3-4">3-4 hours</label>
             <label><input type="radio" name="hours" value="5 or more">5 or more</label>
         </fieldset>
-        
         <input type="email" placeholder="Your email for updates" required>
         <button type="submit">Save Progress</button>
     </form>
